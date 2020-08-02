@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>City Rating App</title>
+  </head>
+  <body>
+    <div class="all"></div>
+    <header class="back opaque" id="header">
+      <h1>My City Rating App</h1>
+      <button id="btn-header">Add City</button>
+    </header>
+    <section class="back opaque" id="database">
+      <h2 id="data">My Personal City Database</h2>
+    </section>
+    <div class="card">
+      <form class="myform visible">
+        <label for="name">City Name</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="url">City Image (URL)</label> <br />
+        <input type="text" id="url" name="url" /><br />
+        <label for="description">City Description</label> <br />
+        <input
+          type="text"
+          id="description"
+          name="description"
+          height="200"
+        /><br />
+        <label for="rating">City Rating</label><br />
+        <input type="range" id="rating" name="rating" value="50" /><br />
+      </form>
+      <span class="myspan visible">
+        <button id="btn-cancel">Cancel</button>
+        <button id="btn-ok">OK</button>
+      </span>
+    </div>
+    <div id="list-container" class="back opaque">
+      <ul id="my-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
